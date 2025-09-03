@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // modern JavaScript (ESNext features)
+    "module": "ESNext", // module system for imports/exports
+    "jsx": "react-jsx", // React 17+ JSX transform (no need to import React)
+    "baseUrl": "/", // Allows absolute imports from the project root
+    "moduleResolution": "node", // Resolves modules like Node.js (ideal for npm-based projects)
+    "allowSyntheticDefaultImports": true, // Allows default imports for non-ESModules (e.g., CommonJS)
+    "checkJs": false // Don't check JS files for TypeScript type checking
+  },
+  "include": ["src"] // Include your source directory (adjust if needed)
+}

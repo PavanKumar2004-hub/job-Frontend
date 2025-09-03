@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Urbanist', sans-serif;
+  --breakpoint--3xl: 1920px;
+  --color-primary: #00A7F3;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+
+  button {
+    outline: none;
+  }
+
+  body {
+    background-color: #f7fafe;
+    overflow-x: hidden;
+
+  }
+
+  /* src/index.css or App.css */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: #777 #f3f4f6;
+    /* Firefox - thumb and track */
+  }
+
+  /* Chrome, Edge, Safari */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f3f4f6;
+    /* Tailwind gray-100 */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #d1d5db;
+    /* Tailwind gray-300 */
+    border-radius: 4px;
+    border: 1px solid transparent;
+  }
+}
